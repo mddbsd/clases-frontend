@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de cajas</title>
+    <style>
+        body{background-color: bisque;}
+
+        header{
+            background-color: darkorange;
+            text-align: center; 
+            color: white;
+        }
+
+        footer{
+            background-color: black; text-align: center; color: white;
+        }
+
+        #caja1{
+            width: 200px;
+            border: 15px solid green;
+            padding: 50px;
+            margin: 40px;
+        }
+        #caja2{
+            width: 300px;
+            height: 150px;
+            border: 15px solid green;
+            margin: 40px;
+        }
+        .ejemplos{
+            display: flex;
+        }
+        .galeria{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .ficha{
+            width: 200px;
+            height: 320px;
+            border: 5px solid blue;
+            margin: 6px;
+            border-radius: 10px;
+        }
+        .ficha-img{
+            border: 2px solid green;
+            margin: 7px 7px 7px 7px;
+            height: 150px;
+            border-radius: 5px;
+
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+        }
+        .ficha > span{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curso CFL 414</h1>
+        <p>Lunes, Miercoles, Viernes de 9:10 a 12:00</p>
+    </header>
+
+    <div id="contendido">
+        <h2>Modelo de cajas</h2>
+        <p>
+            El término "modelo de cajas" es utilizado cuando hablamos de diseño web y estructura del sitio.<br>Ecencialmente, este modelo es una caja que se envuelve alrededor de todos elemento<br>Cada caja consiste de cuatro partes:
+            <ul>
+                <li>Content (contenido): Es el contenido de la caja, donde se muestran texto e imagenes</li>
+                <li>padding (margen interno): Crea un area alrededor del contenido, el Padding es transparente</li>
+                <li>border (bordes): Un borde que envuelve el contenido y el padding</li>
+                <li>margin (margenes): Crea un area alrededor del borde. El margin es transparente</li>
+            </ul>
+        </p>
+        <div class="ejemplos">
+            <div id="caja1">
+                <p>Este es el contenido de la caja numero 1</p>
+            </div>
+            <div id="caja2">
+                <p>Este es el contenido de la caja numero 2</p>
+            </div>
+        </div>
+        <div class="galeria">
+            <a href="#">
+            <div class="ficha">
+                <div class="ficha-img">
+                    <img src="./img/ficha-alien.jpg">
+                </div>
+                <span>
+                    <p>Alien</p>
+                    <ul>
+                        <li>genero: sci-fi</li>
+                        <li>duracion: scott ridley</li>
+                        <li>direcgtor: 180</li>
+                    </ul>
+                </span>
+            </div>
+            </a>
+            <div class="ficha">
+                <div class="ficha-img">
+                    <img src="./img/ficha-jurassic-park.jpg">
+                </div>
+                <span>
+                    <p>Jurassic Park</p>
+                    <ul>
+                        <li>genero: accion</li>
+                        <li>duracion: steven spielberg</li>
+                        <li>direcgtor: 180</li>
+                    </ul>
+                </span>
+            </div>
+
+            <div class="ficha">
+                <div class="ficha-img">
+                    <img src="./img/ficha-robocop.jpg">
+                </div>
+                <span>
+                    <p>Robocop</p>
+                    <ul>
+                        <li>genero: sci-fi</li>
+                        <li>duracion: no lo conozcoy</li>
+                        <li>direcgtor: 180</li>
+                    </ul>
+                </span>
+            </div>
+
+                        <div class="ficha">
+                <div class="ficha-img">
+                    <img src="./img/ficha-robocop.jpg">
+                </div>
+                <span>
+                    <p>Robocop</p>
+                    <ul>
+                        <li>genero: sci-fi</li>
+                        <li>duracion: no lo conozcoy</li>
+                        <li>direcgtor: 180</li>
+                    </ul>
+                </span>
+            </div>
+                        <div class="ficha">
+                <div class="ficha-img">
+                    <img src="./img/ficha-robocop.jpg">
+                </div>
+                <span>
+                    <p>Robocop</p>
+                    <ul>
+                        <li>genero: sci-fi</li>
+                        <li>duracion: no lo conozcoy</li>
+                        <li>direcgtor: 180</li>
+                    </ul>
+                </span>
+            </div>
+                        <div class="ficha">
+                <div class="ficha-img">
+                    <img src="./img/ficha-robocop.jpg">
+                </div>
+                <span>
+                    <p>Robocop</p>
+                    <ul>
+                        <li>genero: sci-fi</li>
+                        <li>duracion: no lo conozcoy</li>
+                        <li>direcgtor: 180</li>
+                    </ul>
+                </span>
+            </div>
+                        <div class="ficha">
+                <div class="ficha-img">
+                    <img src="./img/ficha-robocop.jpg">
+                </div>
+                <span>
+                    <p>Robocop</p>
+                    <ul>
+                        <li>genero: sci-fi</li>
+                        <li>duracion: no lo conozcoy</li>
+                        <li>direcgtor: 180</li>
+                    </ul>
+                </span>
+            </div>
+                        <div class="ficha">
+                <div class="ficha-img">
+                    <img src="./img/ficha-robocop.jpg">
+                </div>
+                <span>
+                    <p>Robocop</p>
+                    <ul>
+                        <li>genero: sci-fi</li>
+                        <li>duracion: no lo conozcoy</li>
+                        <li>direcgtor: 180</li>
+                    </ul>
+                </span>
+            </div>
+                        <div class="ficha">
+                <div class="ficha-img">
+                    <img src="./img/ficha-robocop.jpg">
+                </div>
+                <span>
+                    <p>Robocop</p>
+                    <ul>
+                        <li>genero: sci-fi</li>
+                        <li>duracion: no lo conozcoy</li>
+                        <li>direcgtor: 180</li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Posadas 601 | Lomas del Mirador</p>
+    </footer>
+</body>
+</html>
