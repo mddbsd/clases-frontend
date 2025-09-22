@@ -1,0 +1,45 @@
+body {
+    background-color: bisque;
+}
+
+header{
+    background-color:coral;
+    text-align: center;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav{
+    background-color:cadetblue;
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+}
+
+.contenido{
+    background-color: greenyellow;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+}
+
+.titulo {
+    text-align: right;
+}
+
+.articulo{
+    background-color: aquamarine;
+    margin: 10px;
+}
+
+img{
+    float: left;
+    width: 150px;
+    height: 150px;
+}
