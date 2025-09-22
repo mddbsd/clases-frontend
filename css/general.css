@@ -27,6 +27,7 @@ nav{
     background-color: greenyellow;
     padding: 10px 0px 10px 0px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .titulo {
@@ -42,4 +43,9 @@ img{
     float: left;
     width: 150px;
     height: 150px;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
 }

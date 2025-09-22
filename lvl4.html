@@ -24,7 +24,7 @@
             <div class="titulo">
                 <h2>Hoja de Estilo en Cascada (CSS)</h2>
             </div>
-            <div class="articulo-contenido">
+            <div class="parrafo">
                 <p>CSS, es el acronimo para <b>Cascading Style Sheets</b> que en español significa <b>Hojas de Estilo en Cascada</b>. A diferencia de HTML, que define la esctructura de una pagina web, CSS define la presentación, es decir, cómo deben mostrarse los elementos en la página, su color, su forma, posicion, espaciado, etc. En resumen, la estetica (estilo) del sitio web</p>
                 <p>No podemos utilizar CSS sin HTML, ya que esta es una herramienta que modifica solo la estética del sitio. Hoy en día, por la manera en que evoluciono la web, tamopoco tiene mucho sentido utilizar HTML sin CSS. Esto lleva a dejar obsoloetas algunas etiquetas.</p>
                 <p>Muchas etiquetas HTML se utilizan para dar formato a textos, pero estas fueron reemplazadas con la utilización de CSS.</p>
@@ -35,13 +35,54 @@
             <div class="titulo">
                 <h2>Partes principales de CSS</h2>
             </div>
-            <div class="articulo-contenido">
+            <div class="parrafo">
                 <p>Hay muchos elementos con los que tenemos que trabajar para declarar los estilos, básicamente los más importantes son:</p>
                 <ul>
                     <li><b>Selectores</b>, mediante los cuales podemos especificar a que elementos de la página estamos haciendo referencia. Los principales selectores son: selector de etiqueta (Solo se escribe el nombre de la etiqueta), selector de clase (caracter .), selector de id (caracter #)</li>
                     <li><b>Atributos</b> de estilo para definir que cosas queremos estilizar sobre los selectores indicados. Estos se indicant dentro de las llaves {}</li>
                     <li>Una serie de <b>valores</b>, que indican que estilo se debe aplicar a cada atributo sobre cada selector. Algunos valores se pueden expresar en <b>unidades CSS</b>, que sirven para cuantificar estos (pixeles, puntos, pulgadas, etc.). Estos se escriben a la derecha del atributo, luego del símbolo :</li>
                 </ul>
+            </div>
+        </div>
+
+        <div class="articulo">
+            <div class="titulo">
+                <h2>Combinadores</h2>
+            </div>
+            <div class="parrafo">
+                <p>A travéz de los selectores, podemos modificar las propiedades de diferentes elementos HTML según determinados criterios.</p>
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Simbolo</th>
+                        <th>Exemplo</th>
+                        <th>Resultado</th> 
+                    </tr>
+                    <tr>
+                        <td>Combinador hijos</td>
+                        <td>></td>
+                        <td>div > p</td>
+                        <td>Selecciona TODO elemento &lt;p&gt; que es hijo directo de un elemento &lt;div&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>Combinador de descendientes</td>
+                        <td>(espacio)</td>
+                        <td>div p</td>
+                        <td>Selecciona TODOS los elementos &lt;p&gt; dentro de un elemento &lt;div&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>Combinador siguiente hermanp</td>
+                        <td>+</td>
+                        <td> div + p</td>
+                        <td>Selecciona el primer elemento &lt;p&gt; que se encuentra directamente por debajo del elemento &lt;div&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>Selector Lista</td>
+                        <td>,</td>
+                        <td>div, p</td>
+                        <td>Selecciona TODOS los elementos &lt;p&gt; y TODOS los elementos &lt;div&gt;</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
