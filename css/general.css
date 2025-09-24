@@ -40,12 +40,52 @@ nav{
 }
 
 img{
-    float: left;
+    float:left;
     width: 150px;
     height: 150px;
+    margin: 10px;
 }
 
 table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
+}
+
+td:first-of-type + td{
+    text-align: center;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: cornsilk;
+    padding: 10px;
+    width: 600px;
+}
+
+.contenedor > div{
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.g1{
+    column-gap: 50px;
+}
+.g2{
+    row-gap: 50px
+}
+.g3{
+    gap: 50px;
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.itemr1{
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
