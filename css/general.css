@@ -89,3 +89,84 @@ td:first-of-type + td{
     grid-row-start: 1;
     grid-row-end: 3;
 }
+
+.contenedort1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: cornsilk;
+    padding: 10px;
+    width: 600px;
+}
+
+.contenedort1 > div{
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenedort2{
+    display: grid;
+    grid-template-columns: 80px 200px auto 40px;
+    background-color: cornsilk;
+    padding: 10px;
+    width: 600px;
+}
+
+.contenedort2 > div{
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenedorfr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: cornsilk;
+    padding: 10px;
+    
+}
+
+.contenedorfr > div{
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenedorfr1{
+    display: grid;
+    grid-template-columns: 8fr 2fr 1fr 3fr;
+    background-color: cornsilk;
+    padding: 10px;
+    
+}
+
+.contenedorfr1 > div{
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenedorrow{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px 200px;
+    background-color: cornsilk;
+    padding: 10px;
+    
+}
+
+.contenedorrow > div{
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
