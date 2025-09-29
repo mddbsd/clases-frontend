@@ -35,37 +35,31 @@
 }
 
 .ej7{
-    grid-template-columns: auto auto auto;
-    height: 400px;
     align-content: center;
 }
 
 .ej8{
-    grid-template-columns: auto auto auto;
-    height: 400px;
     align-content: space-evenly;
 }
 
 .ej9{
-    grid-template-columns: auto auto auto;
-    height: 400px;
     align-content: space-around;
 }
 
 .ej10{
-    grid-template-columns: auto auto auto;
-    height: 400px;
     align-content: space-between;
 }
 
 .ej11{
-    grid-template-columns: auto auto auto;
-    height: 400px;
     align-content: start;
 }
 
 .ej12{
+
+    align-content: end;
+}
+
+.align{
     grid-template-columns: auto auto auto;
     height: 400px;
-    align-content: end;
 }
