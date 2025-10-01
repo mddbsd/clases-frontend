@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/lvl7.css">
+    <title>Diseño Responsivo</title>
+</head>
+<body>
+    <header>
+       <h1>CFL 414 Frontend</h1>
+       <p>Lunes, Miercoles, Viernes de 9:10 a 12:00</p>
+    </header>
+    <nav>
+        <a href="./index.html">INICIO</a> |
+        <a href="./lvl1.html">LVL1</a> |
+        <a href="./lvl2.html">LVL2</a> |
+        <a href="./lvl3.html">LVL3</a> |
+        <a href="./lvl4.html">LVL4</a> |
+    </nav>
+    <div class="contenido">
+        <div class="articulo">
+            <div class="titulo">
+                <h2>¿Que es el diseño responsivo?</h2>
+            </div>
+            <div class="parrafo">
+                <p>El diseño responsivo no es un programa ni JavaScripn, es una manera de utilizar solo HTML y CSS para poder representar de manera correcta nuestro sitio en todos los dispositivos.<br>Las paginas web pueden ser visualizadas en diferentes dispositivos como laptops, PCs, tablets o smartphones. Nuestros sitios deberían verse bien y ser de facil acceso independientemente de su reslución.<br>Las paginas no tienen que dejar afuera información si no entran en la pantalla, deben adaptarse para encajar en cada una de ellas.</p>
+            </div>
+            <div class="parrafo">
+                <h3>Viewport</h3>
+                <p>El viewport es el area visible de nuestra web para el usuario. Este varía con el dispositivo, es mas pequeño en un smartphone que en una pantalla de computadora.<br>Antes de las tablets y los dispositivos mobiles, las paginas web eran diseñadas solo para monitores de pc, y era común tener diseñps estaticos y de tamaño fijo. Entonces, comenzamos a surfear por internet en diferentes aparatos, las paginas fijas eran demasiado grandes para encajar en el viewport. Para solucionar esto, los navegadores en esos dispositivos escalaban el sitio entero para adecuarlos a su pantalla.</p>
+                <h3>Configurando el viewport</h3>
+                <p>Este método fue introducido en HTML5 para permitir a los diseñadores tomar control sobre la pantalla del usuario, atravéz de la etiqueta &lt;meta&gt;. Esta etiqueta debe estar contenida dentro del elemento &lt;head&gt;</p>
+                <p>El elemento &lt;meta&gt; configurado con el viewport le da instrucciones al navegador para controlar el escalado y las dimensiones de la página.</p>
+                <ul>
+                    <li>width=device-width: Establece el ancho de la pagina para que siga el ancho del dispositivo</li>
+                    <li>initial-scale=1.0: Establece el zoom inicial cuando la página es cargada por primera vez por el navegador.</li>
+                </ul>
+                <ul>
+                    <li><a href="./ejemplovp1.html">Ejemplo Sin Viewport</a></li>
+                    <li><a href="./ejemplovp2.html">Ejemplo Con Viewport</a></li>
+                </ul>
+            </div>
+            <div class="parrafo">
+                <h2>Escalar contenido al Viewport</h2>
+                <p>Los usuarios estan acostumbrados a navegar los sitios de manera vertical, en mobil o escritorio, pero NO horizontalmente.<br>Entonces, si el usuario es forzado a navegar horizontalmente, o a hacer zoom, para ver el sitio entero, esto resulta una pobre expreiencia del usuario.<br>Algunas reglas a seguir son:</p>
+                <ol>
+                    <li><b>NO utilizar elementos grandes con anchos fijos -</b> Por ejemplo, si el ancho de una imagen es mas grande que el viewport, esto causa que la pagina se desplace horizontalmente. Recuerda ajustar este contenido para encajar con el ancho del viewport.</li>
+                    <li><b>NO dejar que el contenido dependa de un ancho en particular para renderizarse correctamente -</b> Ya que las dimensiones de pantalla y su ancho en pixeles puede variar mucho entre dispositivos, el contenido no debe depender de un ancho de viewport en particular. A veces es mejor utilizar medidas relativas y no absolutas</li>
+                    <li><b>Utilizar las consultas de medios de CSS para aplicar diferentes estilos para pequeñas o grandes pantallas. -</b> Establecer anchos grandes y absolutos para los elementos de la pagina causara que dichos elementos sean muy grandes para dispositivos pequeños. En vez de esto, considere utilizar valor relativos como wifth:100%. También hay que ser cuiodadosos utilizando valores absolutos para el posicionamiento, ya que podría causar que los elementos cagian fuera del viewport en dispositivos pequeños.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="articulo">
+            <div class="titulo">
+                <h2>Media Queries</h2>
+            </div>
+            <div class="parrafo">
+                <p>Media query es una técnica introducida en CSS3. Utiliza la regla @media para incluir un bloque de propiedades CSS solo si se cumplen ciertas condiciones.</p>
+            </div>
+            <div class="ejemplovp1">
+                <p>El fondo de este div cambiará dependiendo del tamaño de la pantalla.<br>El color de fondo es violeta cuando el ancho de la pantalla tenaga menos de 600px</p>
+            </div>
+            <div class="parrafo">
+                <h3>Agregar un breakpoint</h3>
+                <p>Anteriormente creamos una página con filas y columnas, y era responsiva, pero no se veía bien en pantallas pequeñas.<br>Los media queries nos ayudan con esto. Podemos agregar breakpoints (puntos de control) donde ciertas partes del diseño se comportaran de manera diferente en cada punto.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Posadas 601 | Lomas del Mirador</p>
+    </footer>
+</body>
+</html>
